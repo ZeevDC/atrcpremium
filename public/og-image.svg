@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <!-- Background: ATRC OG Light cream -->
+  <rect width="1200" height="630" fill="#FDF8E8"/>
+  <!-- Accent bar top -->
+  <rect width="1200" height="8" fill="#C47A00"/>
+  <!-- Accent bar bottom -->
+  <rect y="622" width="1200" height="8" fill="#C47A00"/>
+  <!-- Left accent stripe -->
+  <rect x="80" y="80" width="6" height="470" fill="#C47A00" rx="3"/>
+  <!-- Main heading -->
+  <text x="120" y="200" font-family="Georgia, serif" font-size="72" font-weight="700" fill="#14213D">ATRC Premium</text>
+  <!-- Tagline -->
+  <text x="120" y="278" font-family="Georgia, serif" font-size="36" font-style="italic" fill="#8F5A00">PMLeBoards</text>
+  <!-- Description line 1 -->
+  <text x="120" y="360" font-family="Arial, sans-serif" font-size="28" fill="#14213D">Psychology Licensure Study Platform</text>
+  <!-- Description line 2 -->
+  <text x="120" y="406" font-family="Arial, sans-serif" font-size="24" fill="#4A5568">100 Days of Disciplined Study for Future Psychometricians</text>
+  <!-- Domain -->
+  <text x="120" y="520" font-family="Arial, sans-serif" font-size="22" fill="#8F5A00">atrcpremium.com</text>
+  <!-- Decorative circle -->
+  <circle cx="1060" cy="315" r="180" fill="#C47A00" opacity="0.08"/>
+  <circle cx="1060" cy="315" r="120" fill="#C47A00" opacity="0.08"/>
+  <!-- PMLE badge -->
+  <rect x="920" y="240" width="200" height="150" rx="16" fill="#14213D"/>
+  <text x="1020" y="300" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#FDF8E8" text-anchor="middle">PMLE</text>
+  <text x="1020" y="328" font-family="Arial, sans-serif" font-size="14" fill="#C47A00" text-anchor="middle">Board Exam</text>
+  <text x="1020" y="356" font-family="Arial, sans-serif" font-size="14" fill="#FDF8E8" text-anchor="middle">Prep Platform</text>
+</svg>

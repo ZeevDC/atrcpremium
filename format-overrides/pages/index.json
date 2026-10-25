@@ -1,0 +1,37 @@
+{
+  "overrides": {
+    "216644": {
+      "marks": {
+        "bold": true,
+        "color": "#ffcd1a",
+        "italic": false
+      },
+      "target": {
+        "contentKey": null,
+        "contentKeyTemplate": null,
+        "expressionHash": "sha256:c27c813ef67c7ede7980db7bc48425fdc4db7f83378a536f7f6908bcaa04e9e9",
+        "file": "src/pages/index.tsx",
+        "sourceKind": "bound-expression",
+        "tagName": "blockquote"
+      },
+      "updatedAt": "2026-10-19T05:35:21.941Z"
+    },
+    "df4f96": {
+      "marks": {
+        "bold": false,
+        "color": "#c27100",
+        "italic": false
+      },
+      "target": {
+        "contentKey": null,
+        "contentKeyTemplate": null,
+        "expressionHash": "sha256:c27c813ef67c7ede7980db7bc48425fdc4db7f83378a536f7f6908bcaa04e9e9",
+        "file": "src/pages/index.tsx",
+        "sourceKind": "bound-expression",
+        "tagName": "blockquote"
+      },
+      "updatedAt": "2026-10-21T07:59:11.471Z"
+    }
+  },
+  "version": 1
+}

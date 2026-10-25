@@ -1,0 +1,121 @@
+{
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-horizontal-19aa36b0.png",
+    "searchQuery": "",
+    "alternatives": [
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-transparent-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+    ],
+    "productMockupsMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-transparent-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png": [
+        {
+          "type": "mug",
+          "label": "Mug",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-mug-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+        },
+        {
+          "type": "card",
+          "label": "Business Card",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-card-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+        },
+        {
+          "type": "tshirt",
+          "label": "T-Shirt",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-tshirt-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+        },
+        {
+          "type": "box",
+          "label": "Packaging",
+          "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-box-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+        }
+      ]
+    },
+    "productMockups": [
+      {
+        "type": "mug",
+        "label": "Mug",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-mug-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+      },
+      {
+        "type": "card",
+        "label": "Business Card",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-card-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+      },
+      {
+        "type": "tshirt",
+        "label": "T-Shirt",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-tshirt-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+      },
+      {
+        "type": "box",
+        "label": "Packaging",
+        "url": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/70bd2504-7b7f-4c15-9231-bb65b4b7b65b/horizontal-mockup-box-4eee8989-74af-4045-b995-c2992febc3c2/logo-logo.png"
+      }
+    ],
+    "userModified": true,
+    "createdAt": "2026-10-18T04:37:30.522Z",
+    "lastUpdated": "2026-10-24T13:07:43.192Z",
+    "uploadSources": {
+      "/airo-assets/uploads/logo-horizontal-19aa36b0.png": "92aj0ll4wa_1792847247815_file_6ssJ0xggGe.png"
+    },
+    "uploadContentHash": "cb1fc1ba6a72e75aeec37b610fe26b2cfad79be99840e6aabbafa8e6c324ee57",
+    "naturalOrientation": "square",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-horizontal-19aa36b0.png",
+    "surfaceMode": "dark"
+  },
+  "logo/primary": {
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-primary-19aa36b0.png",
+    "surfaceMode": "dark",
+    "currentUrl": "/airo-assets/uploads/logo-primary-19aa36b0.png",
+    "userModified": true,
+    "mediaType": "logo",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-primary-b1080d4e.png"
+    ],
+    "uploadSources": {
+      "/airo-assets/uploads/logo-primary-b1080d4e.png": "92aj0ll4wa_1792326221477_file_TKyHRoFhP5.jpg",
+      "/airo-assets/uploads/logo-primary-19aa36b0.png": "92aj0ll4wa_1792847247815_file_6ssJ0xggGe.png"
+    },
+    "uploadContentHash": "cb1fc1ba6a72e75aeec37b610fe26b2cfad79be99840e6aabbafa8e6c324ee57",
+    "createdAt": "2026-10-18T12:23:53.777Z",
+    "lastUpdated": "2026-10-24T13:07:43.193Z",
+    "naturalOrientation": "square"
+  },
+  "logo/vertical": {
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-vertical-fec5df43.png",
+    "surfaceMode": "dark",
+    "currentUrl": "/airo-assets/uploads/logo-vertical-fec5df43.png",
+    "userModified": true,
+    "mediaType": "logo",
+    "searchQuery": "",
+    "alternatives": [
+      "/airo-assets/uploads/logo-vertical-3225b239.png"
+    ],
+    "uploadSources": {
+      "/airo-assets/uploads/logo-vertical-3225b239.png": "92aj0ll4wa_1792326221477_file_TKyHRoFhP5.jpg",
+      "/airo-assets/uploads/logo-vertical-fec5df43.png": "92aj0ll4wa_1792847247815_file_6ssJ0xggGe.png"
+    },
+    "uploadContentHash": "cb1fc1ba6a72e75aeec37b610fe26b2cfad79be99840e6aabbafa8e6c324ee57",
+    "createdAt": "2026-10-18T12:23:53.777Z",
+    "lastUpdated": "2026-10-24T13:07:43.193Z",
+    "naturalOrientation": "vertical"
+  },
+  "logo/favicon": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-favicon-2c378daa.png",
+    "searchQuery": "",
+    "alternatives": [
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/4cd78a1f-bb78-4244-9fee-8f95f7f0be3c/session/fe581d82-14b4-426c-a573-8a8efafec0b3/favicon-transparent-7b93b5a4-6329-486d-8bc6-60ff94e32b60/logo-logo.png"
+    ],
+    "userModified": true,
+    "createdAt": "2026-10-18T12:23:53.777Z",
+    "lastUpdated": "2026-10-24T13:07:43.193Z",
+    "surfaceMode": "dark",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-favicon-2c378daa.png",
+    "uploadSources": {
+      "/airo-assets/uploads/logo-favicon-2c378daa.png": "92aj0ll4wa_1792847247815_file_6ssJ0xggGe.png"
+    },
+    "uploadContentHash": "cb1fc1ba6a72e75aeec37b610fe26b2cfad79be99840e6aabbafa8e6c324ee57"
+  }
+}

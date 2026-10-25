@@ -1,0 +1,25 @@
+{
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-horizontal-19aa36b0.png",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-horizontal-19aa36b0.png",
+    "naturalOrientation": "square"
+  },
+  "logo/primary": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-primary-19aa36b0.png",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-primary-19aa36b0.png",
+    "naturalOrientation": "square"
+  },
+  "logo/vertical": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-vertical-fec5df43.png",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-vertical-fec5df43.png",
+    "naturalOrientation": "vertical"
+  },
+  "logo/favicon": {
+    "mediaType": "logo",
+    "currentUrl": "/airo-assets/uploads/logo-favicon-2c378daa.png",
+    "darkSurfaceUrl": "/airo-assets/uploads/logo-favicon-2c378daa.png"
+  }
+}

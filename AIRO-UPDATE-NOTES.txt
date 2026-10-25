@@ -1,0 +1,18 @@
+ATRC Premium — AIRO Builder update
+
+Visual direction: numbered design preview 2 (storybook island study retreat), retaining the existing navy blue and gold identity.
+
+Functional corrections included:
+- Unwrap Drizzle MySQL raw query results before mapping material rows. This fixes Admin responses with id "undefined" and student /api/materials returning an empty list.
+- Use the same row unwrapping for material list, edit/delete, token issuance, and protected file serving.
+- Add an idempotent startup migration for material_bookmarks.
+- Admin file-open action uses the protected short-lived token/stream route instead of an R2 key as a site URL.
+- Video uploads default to Recorded Lectures; the category is still editable.
+- Learning Materials displays API loading errors and a retry action.
+
+Visual updates:
+- Add an illustrated study-retreat hero image to Home and Learning Materials.
+- Give active sidebar navigation a gold filled state and refine parchment card styling.
+- Keep the existing responsive structure and site functionality.
+
+Files changed or added are in their original project paths. No existing files were deleted. The Cloudflare Worker is not included in this app source ZIP; continue using the separately supplied corrected Worker script.
