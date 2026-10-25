@@ -1,0 +1,45 @@
+{
+  "hero": {
+    "eyebrow": "§ Welcome to ATRC Premium",
+    "headline": "Your journey to becoming a licensed psychometrician starts here.",
+    "subheadline": "PMLeBoards Premium gives you everything you need to review smarter, track your progress, and walk into the board exam with confidence."
+  },
+  "features": {
+    "label": "What you get with Premium",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Curated Study Materials",
+        "description": "Notes, drills, and lecture recordings aligned to the TOS.",
+        "id": "JWBK8WD5bmy840YUenC0f"
+      },
+      {
+        "icon": "📊",
+        "title": "Progress Tracking",
+        "description": "Log study hours, monitor streaks, and visualise your TOS coverage.",
+        "id": "qyP2SS9YdqG2HeZ8rc_ZO"
+      },
+      {
+        "icon": "🏆",
+        "title": "Live Leaderboard",
+        "description": "Stay motivated alongside fellow reviewees on the ranked board.",
+        "id": "2eOcvsRrK_-JSGauBfb7s"
+      },
+      {
+        "icon": "📅",
+        "title": "Study Planner",
+        "description": "Calendar-based planner with mood tracking to keep you on schedule.",
+        "id": "JuLCcpHlQgZ9oVkNQ6sdC"
+      }
+    ]
+  },
+  "accessNote": "Access to premium study materials is granted by the ATRC admin team after account creation. You will be notified once your account is activated.",
+  "form": {
+    "eyebrow": "§ Create your account",
+    "heading": "Sign Up",
+    "submitLabel": "Create my account",
+    "loadingLabel": "Creating account…",
+    "signInPrompt": "Already have an account?",
+    "signInLabel": "Sign in"
+  }
+}

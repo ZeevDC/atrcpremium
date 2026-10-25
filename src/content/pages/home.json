@@ -1,0 +1,18 @@
+{
+  "syncBanner": {
+    "message": "Cloud sync not configured. Participants only see their own data.",
+    "ctaLabel": "Set Up Now →"
+  },
+  "footer": {
+    "text": "🍵 ATRCPremium.com · © 2026 atrcpremium.com — PMLE / RPM 100 Days Study Challenge. All rights reserved."
+  },
+  "joinCta": {
+    "heading": "Join the Challenge",
+    "subtext": "100 days. One goal. Topnotcher.",
+    "buttonLabel": "🍵 Start My 100 Days"
+  },
+  "comingSoon": {
+    "heading": "Coming Soon",
+    "subtext": "This section is under construction. Check back soon!"
+  }
+}

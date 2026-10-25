@@ -1,0 +1,52 @@
+{
+  "TITLES": [
+    {
+      "level": 1,
+      "name": "Aspiring Psychometrician",
+      "emoji": "🌱",
+      "days": 0,
+      "unlocked": true,
+      "id": "g8rJTVLYrW32zU1msCDQ3"
+    },
+    {
+      "level": 2,
+      "name": "Dedicated Reviewee",
+      "emoji": "📖",
+      "days": 10,
+      "unlocked": false,
+      "id": "zw5JPsjnflBd34qSQCHvS"
+    },
+    {
+      "level": 3,
+      "name": "Consistent Scholar",
+      "emoji": "🎓",
+      "days": 25,
+      "unlocked": false,
+      "id": "ioH7hZJk3sa6enVdsu17S"
+    },
+    {
+      "level": 4,
+      "name": "Focused Candidate",
+      "emoji": "🎯",
+      "days": 50,
+      "unlocked": false,
+      "id": "OU3VCqFpWTBXzcyXw2DbU"
+    },
+    {
+      "level": 5,
+      "name": "Elite Reviewer",
+      "emoji": "⭐",
+      "days": 75,
+      "unlocked": false,
+      "id": "uH-XWYRjpfYKj6ZeUYu67"
+    },
+    {
+      "level": 6,
+      "name": "Topnotcher",
+      "emoji": "🏆",
+      "days": 100,
+      "unlocked": false,
+      "id": "EuNEeJn5In0TWQXm4QL81"
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "heading": "⚙️ Admin Panel",
+  "tabs": {
+    "users": "👥 User Directory",
+    "allowlist": "📧 Allowlist Manager",
+    "materials": "📚 Learning Materials",
+    "privacy": "🔒 Privacy & DPA",
+    "announcements": "📣 Announcements",
+    "analytics": "📊 Dashboard Analytics",
+    "leaderboard": "🏆 Leaderboard Mod",
+    "maintenance": "🔧 Maintenance",
+    "backup": "☁️ Backup & Sync"
+  },
+  "users": {
+    "sectionTitle": "👥 User Directory",
+    "searchPlaceholder": "Search by name, email, or university...",
+    "emptyState": "No registered users yet.",
+    "tableHeaders": [
+      "Name",
+      "University",
+      "Email",
+      "Student No.",
+      "Last Active",
+      "Streak",
+      "Status",
+      "Actions"
+    ]
+  },
+  "allowlist": {
+    "sectionTitle": "📧 Allowlist Manager",
+    "description": "Manage which email addresses are allowed to register. The full allowlist manager is on its own page.",
+    "openButton": "Open Allowlist Manager →"
+  },
+  "materials": {
+    "sectionTitle": "📚 Learning Materials Management",
+    "uploadButton": "Upload Material",
+    "emptyState": "No materials uploaded yet.",
+    "emptySubtitle": "Upload notes, drills, lectures, or Gizmo links for students.",
+    "modalTitle": "Add New Material",
+    "modalEditTitle": "Edit Material",
+    "namePlaceholder": "Display name (e.g. Abnormal Psych Notes Week 1)",
+    "cancelButton": "Cancel",
+    "saveButton": "Save Changes",
+    "uploadSubmitButton": "Upload",
+    "addLinkButton": "Add Link",
+    "subjectLabel": "Subject",
+    "categoryLabel": "Category",
+    "watermarkLabel": "Enable watermark",
+    "publishedLabel": "Publish immediately",
+    "typeFile": "Upload File",
+    "typeLink": "Add Link",
+    "linkPlaceholder": "https://drive.google.com/...",
+    "linkLabel": "URL / Link",
+    "subjects": [
+      {
+        "id": "general",
+        "label": "General / All Subjects"
+      },
+      {
+        "id": "abnormal",
+        "label": "Abnormal Psychology"
+      },
+      {
+        "id": "assessment",
+        "label": "Psychological Assessment"
+      },
+      {
+        "id": "io",
+        "label": "I/O Psychology"
+      },
+      {
+        "id": "developmental",
+        "label": "Developmental Psychology"
+      }
+    ],
+    "categories": [
+      {
+        "id": "notes",
+        "label": "Notes"
+      },
+      {
+        "id": "drills",
+        "label": "Drills"
+      },
+      {
+        "id": "lectures",
+        "label": "Lectures"
+      },
+      {
+        "id": "gizmo",
+        "label": "Gizmo Links"
+      }
+    ]
+  },
+  "privacy": {
+    "sectionTitle": "🔒 Privacy & Compliance (DPA)",
+    "items": [
+      {
+        "id": "notice",
+        "label": "Edit Privacy Notice",
+        "desc": "Update the privacy notice text shown to students. Version tracking enabled."
+      },
+      {
+        "id": "consent",
+        "label": "Consent Records",
+        "desc": "View who agreed to the privacy notice, when, and to which version."
+      },
+      {
+        "id": "access",
+        "label": "Data Access Requests",
+        "desc": "Export a student's data on request (access rights under RA 10173)."
+      },
+      {
+        "id": "erasure",
+        "label": "Data Erasure Requests",
+        "desc": "Delete a student's data on request (erasure rights under RA 10173)."
+      }
+    ]
+  },
+  "announcements": {
+    "sectionTitle": "📣 Announcement Management",
+    "newButton": "New Announcement",
+    "emptyTitle": "No announcements yet.",
+    "emptySubtitle": "Click \"New Announcement\" to post one.",
+    "modalNewTitle": "New Announcement",
+    "modalEditTitle": "Edit Announcement",
+    "titlePlaceholder": "Title *",
+    "bodyPlaceholder": "Body text (optional)",
+    "pinLabel": "📌 Pin to top",
+    "publishLabel": "Publish now",
+    "draftLabel": "Save as draft",
+    "saveButton": "Save Changes",
+    "postButton": "Post Announcement",
+    "cancelButton": "Cancel"
+  },
+  "analytics": {
+    "sectionTitle": "📊 Dashboard Analytics",
+    "emptyNote": "Live analytics will populate once students start logging study sessions.",
+    "stats": [
+      {
+        "id": "total",
+        "label": "Total Students",
+        "emoji": "👥"
+      },
+      {
+        "id": "active",
+        "label": "Active Users",
+        "emoji": "⚡"
+      },
+      {
+        "id": "hours",
+        "label": "Total Hours Logged",
+        "emoji": "⏱️"
+      },
+      {
+        "id": "streak",
+        "label": "Average Streak",
+        "emoji": "🔥"
+      },
+      {
+        "id": "ann",
+        "label": "Announcements",
+        "emoji": "📣"
+      },
+      {
+        "id": "inactive",
+        "label": "Inactive Users",
+        "emoji": "😴"
+      }
+    ],
+    "pmleTitle": "🎯 PmLE Exam Date",
+    "pmleDescription": "Set the PmLE exam date to power the countdown on the student dashboard. Students will see the live days-remaining count.",
+    "pmleDateLabel": "Exam Date",
+    "pmleSaveButton": "Save Date",
+    "pmleClearButton": "Clear Date",
+    "pmleSavedToast": "PmLE date saved.",
+    "pmleClearedToast": "PmLE date cleared.",
+    "pmleErrorToast": "Failed to save date.",
+    "pmleCurrentLabel": "Current date set:",
+    "pmleNoneLabel": "No date set — students see \"?\"",
+    "pmleLoadError": "Could not load current date."
+  },
+  "leaderboard": {
+    "sectionTitle": "🏆 Leaderboard Moderation",
+    "resetButton": "Reset Leaderboard",
+    "resetConfirm": "Reset the leaderboard? This cannot be undone.",
+    "resetToast": "Leaderboard reset.",
+    "hideButton": "Hide from Board",
+    "emptyState": "No users on the leaderboard yet."
+  },
+  "maintenance": {
+    "sectionTitle": "🔧 Maintenance Mode",
+    "title": "Maintenance Mode",
+    "description": "Temporarily lock the app during updates. Students will see a maintenance message.",
+    "enableLabel": "🟢 OFF — Click to Enable",
+    "disableLabel": "🔴 ON — Click to Disable",
+    "warningText": "Maintenance mode is currently ON. Students cannot access the app. Remember to turn it off when done."
+  },
+  "backup": {
+    "sectionTitle": "☁️ Backup & Sync",
+    "lastSyncedLabel": "Last Synced",
+    "lastSyncedValue": "Never — Cloud Sync not configured",
+    "notConnected": "⚠️ Not Connected",
+    "syncButton": "☁️ Manual Sync",
+    "syncToast": "Cloud sync not configured yet.",
+    "configButton": "⚙️ Configure Cloudflare Worker",
+    "configToast": "Configure Cloudflare Worker to enable sync.",
+    "helpText": "Connect your Cloudflare Worker to enable real-time data sync and backup across devices."
+  },
+  "accessDenied": {
+    "icon": "🔒",
+    "title": "Admin Access Only",
+    "description": "This panel is restricted to administrators.",
+    "homeButton": "Go Home"
+  }
+}

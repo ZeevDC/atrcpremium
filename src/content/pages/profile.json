@@ -1,0 +1,9 @@
+{
+  "heading": "👤 Profile",
+  "sections": {
+    "idCard": "🪪 ATRC ID",
+    "credentials": "🔐 Manage Credentials",
+    "notifications": "🔔 Notifications",
+    "chooseAvatar": "Choose Avatar"
+  }
+}

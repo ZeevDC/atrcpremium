@@ -1,0 +1,23 @@
+{
+  "contactLabel": "Contact ATRC",
+  "contactEmail": "anotoreviewcenter@gmail.com",
+  "dataPreservedNote": "Your study data, logs, and progress are safely preserved and will be restored when your access is renewed.",
+  "signOutButton": "Sign Out",
+  "reasons": {
+    "expired": {
+      "emoji": "⏰",
+      "title": "Your Access Has Expired",
+      "body": "Your subscription has ended. Please contact ATRC to renew your access and continue your review journey."
+    },
+    "suspended": {
+      "emoji": "🔒",
+      "title": "Your Account Has Been Suspended",
+      "body": "Your account has been suspended by the administrator. Please contact ATRC for assistance."
+    },
+    "pending": {
+      "emoji": "⏳",
+      "title": "Access Pending",
+      "body": "Your account is awaiting access assignment by the administrator. Please contact ATRC to get started."
+    }
+  }
+}

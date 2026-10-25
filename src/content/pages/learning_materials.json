@@ -1,0 +1,58 @@
+{
+  "pageTitle": "Learning Materials — ATRC Premium",
+  "pageMetaDescription": "Access ATRC study notes, drills, recorded lectures, and Gizmo links.",
+  "heading": "📚 Learning Materials",
+  "viewOnlyBadge": "View Only · No Download",
+  "tabs": [
+    {
+      "id": "notes",
+      "label": "Notes",
+      "emoji": "📝"
+    },
+    {
+      "id": "drills",
+      "label": "Drills",
+      "emoji": "⚡"
+    },
+    {
+      "id": "lectures",
+      "label": "Recorded Lectures",
+      "emoji": "🎥"
+    },
+    {
+      "id": "gizmo",
+      "label": "Gizmo Links",
+      "emoji": "🔗"
+    }
+  ],
+  "loadingEmoji": "⏳",
+  "loadingText": "Loading materials…",
+  "emptyEmoji": "📂",
+  "emptyTitle": "No materials uploaded yet.",
+  "emptySubtitle": "The admin will upload study materials here. Check back soon!",
+  "watermarkedLabel": "Watermarked",
+  "signedUrlLabel": "Signed URL · Expires on close",
+  "externalLinkLabel": "External Link",
+  "viewButton": "View",
+  "openButton": "Open",
+  "adminLinkLabel": "+ Upload Material (Admin Panel)",
+  "consent": {
+    "sectionTitle": "Privacy Notice & Consent",
+    "alertText": "Data Privacy Act (RA 10173) Notice: By accessing these learning materials, you acknowledge that your access activity (materials viewed, timestamps, device information) is logged for anti-sharing and security purposes. This data is processed in accordance with the Data Privacy Act of 2012.",
+    "antiSharingTitle": "Anti-Sharing Controls:",
+    "antiSharingItems": [
+      "Access is limited to registered devices only.",
+      "All materials are watermarked with your name and student ID.",
+      "Downloading, screenshotting, or sharing materials is strictly prohibited.",
+      "Violations may result in permanent account suspension."
+    ],
+    "rightsTitle": "Your Rights under the DPA:",
+    "rightsItems": [
+      "Right to access your personal data held by ATRC.",
+      "Right to request correction of inaccurate data.",
+      "Right to erasure of your data upon request.",
+      "Contact: anotoreviewcenter@gmail.com for data requests."
+    ],
+    "agreeButton": "I Understand & Agree — Access Materials"
+  }
+}

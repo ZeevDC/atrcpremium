@@ -1,0 +1,31 @@
+{
+  "pageTitle": "Leaderboard — ATRC Premium",
+  "pageDescription": "See the top challengers in the ATRC 100 Days Study Challenge.",
+  "heading": "🏆 Leaderboard",
+  "cardTitle": "Top Challengers",
+  "cardSubtitle": "Ranked by total hours",
+  "searchPlaceholder": "Search by name…",
+  "loadingText": "Loading rankings…",
+  "subjects": [
+    {
+      "id": "abnormal",
+      "label": "Abnormal",
+      "weight": "20%"
+    },
+    {
+      "id": "assessment",
+      "label": "Assessment",
+      "weight": "40%"
+    },
+    {
+      "id": "io",
+      "label": "I/O",
+      "weight": "20%"
+    },
+    {
+      "id": "developmental",
+      "label": "Developmental",
+      "weight": "20%"
+    }
+  ]
+}
