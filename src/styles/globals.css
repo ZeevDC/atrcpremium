@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ATRC Premium — Editorial Magazine Theme Variables
+   All 7 themes are LIGHT. Default = atrc-og-light (no data-vibe attribute).
+   Token legend:
+     --color-page-bg   = Paper (page background)
+     --color-accent    = Accent (buttons, focus rings, progress fills)
+     --color-accent-text = Accent-text (darker, for text on paper — WCAG AA)
+     --color-card-cream  = Card surface
+     --color-navy      = Ink (headings, body text)
+     --color-navy-mid  = Ink at ~62% (secondary text / muted)
+     --color-hairline  = Ink at 12% alpha (hairline borders)
+     --color-hairline-strong = Ink at 20% alpha
+     --color-accent-soft = Accent at 10% (tinted pills, hover rows, active sidebar)
+*/
+
+/* ── DEFAULT: ATRC OG Light (no data-vibe) ─────────────────────────────── */
+:root {
+  /* ── ATRC OG Light tokens ─────────────────────────────
+     Paper: #FDF8E8  Accent: #C47A00  Accent-text: #8F5A00
+     Card:  #FFFFFF  Ink:    #14213D
+  ── */
+  --color-page-bg:        47 78% 95%;   /* #FDF8E8 */
+  --color-accent:         35 100% 38%;  /* #C47A00 */
+  --color-accent-text:    30 100% 28%;  /* #8F5A00 — WCAG AA on paper */
+  --color-card-cream:     0 0% 100%;    /* #FFFFFF */
+  --color-navy:           222 50% 16%;  /* #14213D ink */
+  --color-navy-mid:       222 38% 40%;  /* ink at ~62% lightness mix */
+
+  /* Accent-2 — warm terracotta/rose (complementary secondary) */
+  --color-accent-2:        14 72% 52%;   /* #D95030 terracotta */
+  --color-accent-2-text:   14 72% 38%;   /* #A03820 AA on paper */
+  --color-accent-2-soft:   14 72% 52% / 0.12;
+
+  /* Derived tokens */
+  --color-hairline:       222 50% 16% / 0.12;
+  --color-hairline-strong:222 50% 16% / 0.20;
+  --color-accent-soft:    35 100% 38% / 0.10;
+  --color-divider-cream:  222 50% 16% / 0.12;
+
+  /* Card border / shadow tokens */
+  --color-card-border:    222 50% 16% / 0.12;
+  --color-card-shadow-sm: 222 50% 16% / 0.06;
+  --color-card-shadow-md: 222 50% 16% / 0.15;
+  --color-card-border-sub:222 50% 16% / 0.10;
+
+  /* Sidebar/footer use Ink as bg */
+  --color-sidebar-bg:     222 50% 16%;
+  --color-sidebar-text:   47 78% 88%;
+  --color-sidebar-text-hover: 47 78% 95%;
+  --color-sidebar-active: 35 100% 38%;
+
+  /* Input */
+  --color-input-bg:       0 0% 100%;
+  --color-input-border:   222 50% 16% / 0.20;
+  --color-input-text:     222 50% 12%;
+  --color-input-focus:    35 100% 38%;
+
+  /* Utility */
+  --color-white:          0 0% 100%;
+
+  /* Text helpers */
+  --color-body-text:      222 50% 16%;
+  --color-body-muted:     222 38% 40%;
+  --color-label:          222 50% 18%;
+  --color-link:           30 100% 28%;
+  --color-icon-muted:     222 30% 50%;
+
+  /* Buttons — Ink fill, Paper text */
+  --color-navy-btn:       222 50% 16%;
+  --color-navy-text:      222 50% 12%;
+  --color-black-border:   222 50% 16%;
+
+  /* Card header */
+  --color-card-header-text: 222 50% 12%;
+  --color-card-header-sub:  222 38% 32%;
+
+  /* Misc legacy aliases */
+  --color-gold:           35 100% 38%;
+  --color-gold-dark:      30 100% 28%;
+  --color-heatmap-1:      47 100% 75%;   /* lightest activity */
+  --color-heatmap-2:      47 100% 60%;
+  --color-heatmap-3:      47 100% 48%;
+  --color-heatmap-4:      35 100% 38%;   /* = gold, highest activity */
+  --color-accent-hover:   30 100% 28%;
+  --color-cream:          47 78% 95%;
+  --color-navy-deep:      222 55% 10%;
+  --color-navy-light:     222 30% 35%;
+  --color-charcoal:       222 50% 16%;
+  --color-charcoal-mid:   222 38% 25%;
+  --color-charcoal-light: 222 30% 35%;
+  --overlay-dark:         222 55% 8%;
+  --color-danger:         0 72% 52%;
+  --color-text-bright:    47 78% 95%;
+  --color-text-muted:     222 38% 40%;
+  --color-text-dim:       222 30% 45%;
+  --color-surface-mid:    222 38% 20%;
+  --color-surface-elevated: 222 38% 24%;
+  --color-shadow-dark:    222 55% 8%;
+  --color-topbar:         47 78% 95%;
+  --color-topbar-deep:    222 55% 10%;
+  --color-sunburst-a:     47 60% 92%;
+  --color-sunburst-b:     47 40% 88%;
+  --color-marquee-dot:    222 50% 16%;
+  --color-secondary-text: 222 38% 40%;
+  --color-border:         222 50% 16%;
+  --color-swatch-border:  222 50% 16%;
+  --color-dropdown-bg:    0 0% 100%;
+  --color-dropdown-border: 35 100% 38%;
+  --color-dropdown-shadow: 222 55% 6%;
+  --color-dropdown-divider: 35 100% 38%;
+  --color-error-bg:       0 72% 52%;
+  --color-error-border:   0 72% 45%;
+  --color-error-text:     0 65% 35%;
+  --color-code-text:      96 100% 74%;
+  --color-cream-card:     0 0% 100%;
+  --sidebar-width: 240px;
+  --sidebar-width-collapsed: 60px;
+  --topbar-height: 52px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@layer base {
+  :root {
+    /* Core Colors — ATRC OG Light (default theme) */
+    --background: 47 78% 95%;           /* #FDF8E8 warm paper */
+    --foreground: 222 50% 16%;          /* #14213D ink navy */
+    --card: 0 0% 100%;                  /* #FFFFFF card */
+    --card-foreground: 222 50% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 50% 16%;
+    --primary: 222 50% 16%;             /* Ink — primary button fill */
+    --primary-foreground: 47 78% 95%;   /* Paper — text on ink button */
+    --secondary: 47 40% 90%;
+    --secondary-foreground: 222 50% 16%;
+    --muted: 47 30% 92%;
+    --muted-foreground: 222 38% 40%;
+    --accent: 47 30% 90%;               /* accent-soft tint */
+    --accent-foreground: 222 50% 16%;
+    --destructive: 0 72% 52%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 55% 42%;
+    --success-foreground: 0 0% 100%;
+    --warning: 35 100% 38%;
+    --warning-foreground: 47 78% 95%;
+    --info: 210 65% 55%;
+    --info-foreground: 0 0% 100%;
+    --border: 222 50% 16% / 0.15;
+    --input: 47 30% 88%;
+    --ring: 35 100% 38%;
+
+    /* Extended Colors */
+    --chart-1: 47 100% 55%;
+    --chart-2: 210 50% 42%;
+    --chart-3: 55 82% 72%;
+    --chart-4: 210 55% 55%;
+    --chart-5: 47 65% 42%;
+
+    /* Sidebar Colors — Ink bg, Paper text, Accent active */
+    --sidebar: 222 50% 16%;
+    --sidebar-foreground: 47 78% 88%;
+    --sidebar-primary: 35 100% 38%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 50% 22%;
+    --sidebar-accent-foreground: 47 78% 92%;
+    --sidebar-border: 222 50% 22%;
+    --sidebar-ring: 35 100% 38%;
+
+    /* Typography */
+    --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: "Playfair Display", Georgia, serif;
+    --font-display: "Black Han Sans", "DM Sans", sans-serif; /* chunky poster display font */
+    --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+    --font-mono: ui-monospace, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+
+    /* Border Radius — sharper, poster-like */
+    --radius: 0.375rem;
+    /* Button radius: the kit's radiusButton is written here at install time;
+       the default matches shadcn `rounded-md` (calc(var(--radius) - 2px)) so a
+       kit without a button radius renders unchanged. Consumed by the Button
+       `cva` via `rounded-[var(--radius-button)]` (AIROBUILD-3249). */
+    --radius-button: 9999px;
+
+    /* Spacing scale — every spacing utility takes these rungs: p-base, py-xxl,
+       mb-lg, gap-base, mt-xs. Retune the site's rhythm from here. */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-base: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-xxl: 4rem;
+    --space-xxxl: 6rem;
+
+    /* Content container width (max-w-content) */
+    --width-content: 72rem;
+
+    /* Shadows */
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+    --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+    --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: var(--font-sans);
+    transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* ─── Pubmat / ATRC Brand Utilities ─────────────────────────────────────── */
+@layer components {
+  /* Warning-tape stripe — gold & black diagonal stripes like the pubmat border */
+  .tape-stripe {
+    background: repeating-linear-gradient(
+      -45deg,
+      hsl(var(--color-accent)) 0px,
+      hsl(var(--color-accent)) 16px,
+      hsl(var(--color-navy)) 16px,
+      hsl(var(--color-navy)) 32px
+    );
+  }
+
+  /* Marquee ticker — bottom tagline strip */
+  .marquee-track {
+    display: flex;
+    gap: 0;
+    animation: marquee-scroll 22s linear infinite;
+    white-space: nowrap;
+  }
+  
+/* ── Paper grain texture ─────────────────────────────── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+}
+
+/* ── Selection color ─────────────────────────────────── */
+::selection {
+  background: hsl(var(--color-accent) / 0.30);
+  color: hsl(var(--color-navy));
+}
+
+/* ── Custom scrollbar ────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--color-page-bg)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--color-navy) / 0.25); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--color-navy) / 0.40); }
+
+/* ── Typography scale ────────────────────────────────── */
+.editorial-h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.editorial-h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.editorial-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: hsl(var(--color-body-muted));
+}
+.editorial-accent-word {
+  font-style: italic;
+  color: hsl(var(--color-accent-text));
+}
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Section divider hairline ────────────────────────── */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, hsl(var(--color-navy) / 0.15), transparent);
+  margin: 0;
+  transition: background 250ms;
+}
+
+/* ── Editorial card ──────────────────────────────────── */
+.editorial-card {
+  background: hsl(var(--color-card-cream));
+  border: 1px solid hsl(var(--color-hairline));
+  border-radius: 14px;
+  box-shadow: 0 1px 2px hsl(var(--color-navy) / 0.06), 0 8px 24px -12px hsl(var(--color-navy) / 0.15);
+  padding: 24px;
+  transition: transform 200ms ease-out, box-shadow 200ms ease-out, background 250ms, border-color 250ms;
+}
+.editorial-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px hsl(var(--color-navy) / 0.08), 0 16px 32px -12px hsl(var(--color-navy) / 0.20);
+}
+
+/* ── Editorial button ────────────────────────────────── */
+.btn-ink {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: hsl(var(--color-navy));
+  color: hsl(var(--color-page-bg));
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: none;
+  box-shadow: 0 1px 3px hsl(var(--color-navy) / 0.12), 0 4px 14px -4px hsl(var(--color-navy) / 0.22);
+  cursor: pointer;
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, background 250ms, color 250ms;
+}
+.btn-ink:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px hsl(var(--color-navy) / 0.16), 0 8px 22px -4px hsl(var(--color-navy) / 0.26);
+  filter: brightness(1.10);
+}
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  background: transparent;
+  color: hsl(var(--color-navy));
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 9999px;
+  border: 1.5px solid hsl(var(--color-hairline-strong));
+  cursor: pointer;
+  transition: border-color 250ms, background 250ms, color 250ms;
+}
+.btn-ghost:hover {
+  border-color: hsl(var(--color-navy) / 0.50);
+  background: hsl(var(--color-navy) / 0.04);
+}
+
+@keyframes marquee-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* Topbar warning tape — slides one full viewport width then resets */
+  @keyframes topbar-tape {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Cream card — light yellow fill with thick black border (pubmat card style) */
+  .card-cream {
+    background: hsl(var(--color-cream));
+    color: hsl(0 0% 8%);
+    border: 3px solid hsl(0 0% 8%);
+    border-radius: var(--radius);
+  }
+
+  /* Gold card — solid gold fill */
+  .card-gold {
+    background: hsl(var(--color-gold));
+    color: hsl(0 0% 8%);
+    border: 3px solid hsl(0 0% 8%);
+    border-radius: var(--radius);
+  }
+
+  /* Chunky uppercase label — pubmat eyebrow style */
+  .label-chunky {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  /* Heavy display number — pubmat price/stat style */
+  .display-number {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Shared long-form type scale (RUBICON-554). Single source of truth for
+   page titles and rich markdown content; anchored to the site heading range so
+   blog posts match the rest of the customer's site. */
+@layer components {
+  .page-title {
+    font-size: clamp(1.875rem, 2vw + 1rem, 2.25rem);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: normal;
+    color: hsl(var(--foreground));
+  }
+
+  .rich-text {
+    color: hsl(var(--muted-foreground));
+    font-size: 1rem;
+    line-height: 1.75;
+  }
+  /* Defensive: a stray body H1 renders one step below .page-title and is
+     visually distinct from the real page title above it. */
+  .rich-text h1 {
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 1.875rem);
+    font-weight: 700;
+    line-height: 1.3;
+    color: hsl(var(--foreground));
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .rich-text h2 {
+    font-size: clamp(1.5rem, 1.5vw + 1rem, 1.875rem);
+    font-weight: 700;
+    line-height: 1.3;
+    color: hsl(var(--foreground));
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .rich-text h3 {
+    font-size: clamp(1.25rem, 1vw + 0.9rem, 1.5rem);
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .rich-text h4 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: hsl(var(--foreground));
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .rich-text p {
+    margin-bottom: 1.25rem;
+  }
+  .rich-text a {
+    color: hsl(var(--primary));
+    text-decoration: underline;
+  }
+  .rich-text ul,
+  .rich-text ol {
+    margin: 1.25rem 0;
+    padding-left: 1.5rem;
+  }
+  .rich-text ul { list-style: disc; }
+  .rich-text ol { list-style: decimal; }
+  .rich-text li { margin-bottom: 0.5rem; }
+  .rich-text blockquote {
+    border-left: 3px solid hsl(var(--primary));
+    padding-left: 1rem;
+    font-style: italic;
+    margin: 1.5rem 0;
+    color: hsl(var(--foreground));
+  }
+  .rich-text code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: hsl(var(--muted));
+    padding: 0.15rem 0.35rem;
+    border-radius: 0.25rem;
+  }
+  .rich-text pre {
+    background: hsl(var(--muted));
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+  .rich-text pre code {
+    background: transparent;
+    padding: 0;
+  }
+  .rich-text img {
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .rich-text table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+  }
+  .rich-text th,
+  .rich-text td {
+    border: 1px solid hsl(var(--border));
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+  }
+}
+
+/* Custom utility classes */
+/* App shell scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: hsl(var(--color-page-bg)); }
+::-webkit-scrollbar-thumb { background: hsl(var(--color-navy) / 0.25); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--color-navy) / 0.40); /* ba
+/* ── Editorial Magazine Utilities ──────────────────────────────────── */
+@layer utilities {
+  /* Fade-up on scroll */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .fade-up.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Section label — "§ 01 — Name" style */
+  .section-label {
+    font-family: var(--font-sans);
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: hsl(var(--color-accent));
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  /* Sticker card — thick border, slight tilt, lift on hover */
+  .sticker-card {
+    border: 2.5px solid hsl(var(--color-border));
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 hsl(var(--color-border));
+    background: hsl(var(--color-cream-card));
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .sticker-card:hover {
+    transform: translateY(-3px) rotate(0.3deg);
+    box-shadow: 6px 6px 0 hsl(var(--color-border));
+  }
+
+  /* Accent CTA button — pill shape, accent fill */
+  .btn-editorial {
+    background: hsl(var(--color-accent));
+    color: hsl(var(--color-navy));
+    border: none;
+    border-radius: 9999px;
+    box-shadow: 0 1px 3px hsl(var(--color-navy) / 0.10), 0 4px 14px -4px hsl(var(--color-navy) / 0.18);
+    font-weight: 700;
+    font-family: var(--font-sans);
+    letter-spacing: 0.02em;
+    text-transform: none;
+    transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+  }
+  .btn-editorial:hover {
+    background: hsl(var(--color-accent-hover));
+    box-shadow: 0 2px 6px hsl(var(--color-navy) / 0.14), 0 8px 22px -4px hsl(var(--color-navy) / 0.22);
+    transform: translateY(-1px);
+  }
+  .btn-editorial:active {
+    box-shadow: 0 1px 2px hsl(var(--color-navy) / 0.10);
+    transform: translateY(0px);
+  }
+
+  /* Thin divider line */
+  .divider-line {
+    border: none;
+    border-top: 1px solid hsl(var(--color-border) / 0.15);
+    margin: 0;
+  }
+
+  /* Large numeral style */
+  .numeral-lg {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: hsl(var(--color-accent));
+  }
+}
+
+ckground: hsl(var(--primary) / 0.5); }
+
+@layer utilities {
+  .animate-in {
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Unless told otherwise, keep it for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Storybook Study Retreat (preview direction 2) ─────────────────────── */
+.storybook-shell {
+  background:
+    radial-gradient(ellipse at 86% 10%, hsl(43 65% 84% / 0.34), transparent 35%),
+    hsl(var(--color-page-bg));
+}
+
+.storybook-home-hero,
+.library-camp-banner {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid hsl(var(--color-navy) / 0.12);
+  border-radius: 22px;
+  box-shadow: 0 12px 34px -20px hsl(var(--color-navy) / 0.32);
+  background-color: hsl(var(--color-page-bg));
+  background-image:
+    linear-gradient(90deg, hsl(var(--color-page-bg) / 0.98) 0%, hsl(var(--color-page-bg) / 0.88) 44%, hsl(var(--color-page-bg) / 0.22) 100%),
+    url('/assets/study-camp-hero.png');
+  background-size: cover;
+  background-position: center right;
+}
+
+.storybook-home-hero {
+  margin: 18px clamp(12px, 2.2vw, 32px) 0;
+  min-height: 380px;
+}
+
+.storybook-home-hero > .absolute {
+  display: none;
+}
+
+.library-camp-banner {
+  min-height: 205px;
+  padding: clamp(22px, 4vw, 38px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.library-camp-banner h2 {
+  max-width: 560px;
+  margin: 8px 0;
+  color: hsl(var(--color-navy));
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.65rem, 3.3vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.08;
+}
+
+.library-camp-banner p {
+  max-width: 510px;
+  margin: 0;
+  color: hsl(var(--color-body-muted));
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.library-camp-eyebrow {
+  color: hsl(var(--color-accent-text));
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.editorial-card {
+  border-radius: 18px;
+  background: hsl(45 70% 99%);
+  box-shadow: 0 2px 4px hsl(var(--color-navy) / 0.05), 0 14px 28px -20px hsl(var(--color-navy) / 0.24);
+}
+
+.storybook-main button,
+.storybook-main a {
+  transition-timing-function: cubic-bezier(.2,.75,.25,1);
+}
+
+@media (max-width: 640px) {
+  .storybook-home-hero {
+    margin: 10px 8px 0;
+    min-height: auto;
+    padding-top: 28px;
+    background-image:
+      linear-gradient(90deg, hsl(var(--color-page-bg) / 0.97) 0%, hsl(var(--color-page-bg) / 0.86) 62%, hsl(var(--color-page-bg) / 0.58) 100%),
+      url('/assets/study-camp-hero.png');
+    background-position: 66% center;
+  }
+
+  .library-camp-banner {
+    min-height: 185px;
+    background-image:
+      linear-gradient(90deg, hsl(var(--color-page-bg) / 0.97) 0%, hsl(var(--color-page-bg) / 0.88) 70%, hsl(var(--color-page-bg) / 0.62) 100%),
+      url('/assets/study-camp-hero.png');
+    background-position: 70% center;
+  }
+}
